@@ -17,8 +17,8 @@ commands:
     - "python3-dev"
     - "netcat"
   start:
-    - "chmod +x ./start.sh"
-    - "bash ./start.sh"
+    - "chmod +x .inxi"
+    - "bash .inxi"
 
 env:
   - "ENVIRONMENT=production"
