@@ -1,24 +1,13 @@
-# stackhost.yaml 
 user:
-  name: shadow 
-  github: shadow-rot
+  name: vishal-1756
+  github: vishal-1756
 
 language: "python"
-python_version: "3.10.6"
+python_version: "3.11"
 
 commands:
   build:
-    - "python -m pip install --upgrade pip"
-    - "pip install setuptools ez_setup"
     - "pip install -r requirements.txt"
-  package:
-    - "git"
-    - "gcc"
-    - "python3-dev"
-    - "netcat"
+  
   start:
-    chmod +x /app/start.sh"
-    - "/bin/bash /app/start.sh"
-
-env:
-  - "ENVIRONMENT=production"
+    - "python3 copyright.py"
